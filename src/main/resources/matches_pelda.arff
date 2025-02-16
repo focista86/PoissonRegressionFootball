@@ -1,0 +1,22 @@
+@relation soccer_matches
+
+@attribute gameID numeric
+@attribute leagueID {1,2,3}  % Ha az 1, 2, 3 számok ligákhoz rendelhetők
+@attribute season numeric
+@attribute date date "yyyy-MM-dd HH:mm:ss"
+@attribute homeTeamID numeric
+@attribute awayTeamID numeric
+@attribute homeGoals numeric
+@attribute awayGoals numeric
+@attribute homeProbability numeric
+@attribute drawProbability numeric
+@attribute awayProbability numeric
+@attribute homeGoalsHalfTime numeric
+@attribute awayGoalsHalfTime numeric
+@attribute B365H numeric
+@attribute B365D numeric
+@attribute B365A numeric
+@attribute class {Win, Draw, Lose}  % Célváltozó
+
+@data
+81,1,2015,"2015-08-08 15:45:00",89,82,1,0,0.2843,0.3999,0.3158,1,0,1.65,4,6,Win
